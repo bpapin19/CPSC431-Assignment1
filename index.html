@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="formContainer">
+            <h1 class="header">Add Photo to Gallery</h1>
+            <form action="gallery.php" method="post" enctype="multipart/form-data">
+                <div class="form-group row">
+                <label for="nameInput" class="col-sm-2 col-form-label">Photo Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="col-sm-3" id="name" name="name" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="dateInput" class="col-sm-2 col-form-label">Date Taken:</label>
+                    <div class="col-sm-10">
+                        <input type="date" class="col-sm-3" id="date" name="date" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="photographerInput" class="col-sm-2 col-form-label">Photographer:</label>
+                    <div class="col-sm-10">
+                        <input class="col-sm-3" id="photographerInput" name="photographer" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="locationInput" class="col-sm-2 col-form-label">Location:</label>
+                    <div class="col-sm-10">
+                        <input class="col-sm-3" id="locationInput" name="location" required>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <input class="col-sm-3" type="file" name="fileToUpload" id="fileToUpload" accept="image/*" required>
+                </div>
+                    <input onclick="document.dropdown.submit()" type="submit" class="btn btn-primary" name="submit"/>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
